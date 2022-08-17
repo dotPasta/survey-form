@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Thank you for taking this survey</p>
+<form action="" id="survey-form">   <!--Add action later-->
+
+
+    <fieldset>
+        <label id="name-label">Enter your name:<input id="name" name="name" type="text" placeholder="Enter Name" required></input></label>
+        <label id="email-label">Enter your email:<input id="email" name="email" type="email" placeholder="Enter Email" required></input></label>
+        <label id="number-label">Enter your age:<input id="number" name="number" type="number" min="0" max="100" placeholder="Enter Number"></input></label>
+    </fieldset>
+
+
+    <select id="dropdown" name="dropdown">
+        <option value="">(select)</option>
+        <option value="1">Option one</option>
+        <option value="2">two</option>
+    </select>
+
+
+    <fieldset>
+        <label><input type="radio" name="radio1" value="1" class="inline" /> Radio1</label>
+        <label><input type="radio" name="radio1" value="2" class="inline" /> Radio 2</label>
+    </fieldset>
+
+
+    <input type="checkbox" name="check1" class="inline" value="1" />
+    <input type="checkbox" name="check2" class="inline"  value="2"/>
+
+    <textarea name="textarea" id="textarea"/></textarea>
+
+    <input type="submit" id="submit" name="submit">
+</form>
+</body>
+</html>
