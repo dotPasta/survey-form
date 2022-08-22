@@ -3,41 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
+    <title>Demographic Survey Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<h1 id="title">Survey Form</h1>
+<h1 id="title"> Demographic Survey Form</h1>
 <p id="description">Thank you for taking this survey</p>
 <form action="" id="survey-form">   <!--Add action later-->
 
 
+
     <fieldset>
-        <label id="name-label">Enter your name:<input id="name" name="name" type="text" placeholder="Enter Name" required></input></label>
-        <label id="email-label">Enter your email:<input id="email" name="email" type="email" placeholder="Enter Email" required></input></label>
-        <label id="number-label">Enter your age:<input id="number" name="number" type="number" min="0" max="100" placeholder="Enter Number"></input></label>
+        <label id="name-label">Enter your name:<input id="name" name="name" type="text" placeholder="Enter Name" required/></label>
+        <label id="email-label">Enter your email:<input id="email" name="email" type="email" placeholder="Enter Email" required/></label>
+        <label id="number-label">Enter your age:<input id="number" name="number" type="number" min="0" max="122" placeholder="Enter Number"/></label>
     </fieldset>
 
 
-    <select id="dropdown" name="dropdown">
-        <option value="">(select)</option>
-        <option value="1">Option one</option>
-        <option value="2">two</option>
+    <label for="marital-dropdown">Marital Status</label><select id="marital-dropdown" name="marital-dropdown">
+        <option value="">(Select)</option>
+        <option value="1">Single</option>
+        <option value="2">Married</option>
+        <option value="3">Divorced</option>
+        <option value="4">Seperated</option>
+        <option value="5">Widowed</option>
     </select>
 
 
-    <fieldset>
-        <label><input type="radio" name="radio1" value="1" class="inline" /> Radio1</label>
-        <label><input type="radio" name="radio1" value="2" class="inline" /> Radio 2</label>
+    <fieldset><label id="ethnicity-label">Ethnicity</label>
+        <label><input type="radio" name="radio-white" value="white" class="inline" /> White</label>
+        <label><input type="radio" name="radio-asian" value="asian" class="inline" /> Asian</label>
+        <label><input type="radio" name="radio-hispanic-latino" value="hispanic-latino" class="inline" /> Hispanic or Latino</label>
+        <label><input type="radio" name="radio-hawaiian-pacific" value="hawaiian-pacific" class="inline" /> Native Hawaiian or Other Pacific Islander</label>
+        <label><input type="radio" name="radio-Black" value="black" class="inline" /> Black or African American</label>
+        <label><input type="radio" name="radio-native-american" value="native-american" class="inline" /> Native American</label>
+        <label><input type="radio" name="radio-other" value="other" class="inline" /> Other</label>
     </fieldset>
 
 
-    <input type="checkbox" name="check1" class="inline" value="1" />
-    <input type="checkbox" name="check2" class="inline"  value="2"/>
+    <label>Languages</label><label>
+        <input type="checkbox" name="check-english" class="inline" value="english" />English
+        <input type="checkbox" name="check-spanish" class="inline"  value="spanish"/>Spanish
+        <input type="checkbox" name="check-chinese" class="inline"  value="chinese"/>Chinese
+        <input type="checkbox" name="check-tagalog" class="inline"  value="tagalog"/>Tagalog
+        <input type="checkbox" name="check-vietnamese" class="inline"  value="vietnamese"/>Vietnamese
+        <input type="checkbox" name="check-arabic" class="inline"  value="arabic"/>Arabic
+        <input type="checkbox" name="check-french" class="inline"  value="french"/>French
+        <input type="checkbox" name="check-other" class="inline"  value="other"/>Other(s) Not Listed
+    </label>
 
-    <textarea name="textarea" id="textarea"/></textarea>
-
+    <label>Tell about yourself (optional)
+    <textarea name="textarea" id="textarea"></textarea>
+    </label>
     <input type="submit" id="submit" name="submit">
 </form>
 </body>
